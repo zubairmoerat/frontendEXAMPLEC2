@@ -11,10 +11,14 @@ export default{
   computed:{
     getFriends(){
       return this.$store.dispatch('getFriends')
+    },
+    deleteFriend(){
+      return this.$store.dispatch('deleteFriend')
     }
   },
   mounted(){
     this.getFriends
+    this.deleteFriend
   }
 }
 </script>

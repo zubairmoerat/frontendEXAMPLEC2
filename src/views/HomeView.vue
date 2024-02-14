@@ -15,7 +15,7 @@
             <td>{{ friend.Age }}</td>
             <td>
               <button @click="editFriend" class="edit-btn">Edit</button>
-              <button @click="deleteFriend()" class="delete-btn">Delete</button>
+              <button @click="deleteFriend" class="delete-btn">Delete</button>
             </td>
           </tr>
         </tbody>
