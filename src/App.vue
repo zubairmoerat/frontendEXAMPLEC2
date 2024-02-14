@@ -6,6 +6,19 @@
   <router-view/>
 </template>
 
+<script>
+export default{
+  computed:{
+    getFriends(){
+      return this.$store.dispatch('getFriends')
+    }
+  },
+  mounted(){
+    this.getFriends
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
