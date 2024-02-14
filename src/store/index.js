@@ -24,7 +24,7 @@ export default createStore({
     deleteFriend(context){
       axios.delete(`${dataURL}/friends`).then(res => {
         console.log(res.data);
-        context.commit('setFriends',res.data)
+        context.commit('setFriend',res.data)
       })
     }
   },
